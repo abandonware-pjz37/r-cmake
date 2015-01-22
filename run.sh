@@ -12,7 +12,11 @@ R CMD build .
 R CMD check foopack_0.0.1.tar.gz
 R CMD INSTALL -l "${R_LIBS_USER}" foopack_0.0.1.tar.gz
 
-R CMD BATCH mytest.R || echo "mytest failed"
+FAILED=0
+
+R CMD BATCH mytest.R || FAILED=1
 
 echo "============ mytest.Rout ==============="
 cat mytest.Rout
+
+exit $FAILED
