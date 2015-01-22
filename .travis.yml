@@ -1,0 +1,8 @@
+language:
+  - cpp
+
+install:
+  - sudo apt-get -y install r-base
+
+script:
+  - ./run.sh
