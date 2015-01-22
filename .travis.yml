@@ -13,9 +13,10 @@ install:
   -   ./configure
   -   make -j6
   -   sudo make install
-  -   which R
-  -   R --version
   - cd ..
+  - rm -rf "${R_VERSION}"
+  - which R
+  - R --version
   # -- end
 
 script:
