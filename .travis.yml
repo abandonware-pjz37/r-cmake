@@ -7,11 +7,12 @@ install:
   - sudo apt-get -y install fort77
   - sudo apt-get -y install gfortran
   # Packaging --
+  - sudo apt-get -y install texinfo
+  - sudo apt-get -y install texlive-fonts-extra
+  - sudo apt-get -y install texlive-fonts-recommended
   - sudo apt-get -y install texlive-latex-base
   - sudo apt-get -y install texlive-latex-extra
   - sudo apt-get -y install texlive-science
-  - sudo apt-get -y install texlive-fonts-extra
-  - sudo apt-get -y install texinfo
   # -- end
   # Install R --
   - export R_VERSION=R-3.1.2
