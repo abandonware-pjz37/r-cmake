@@ -1,0 +1,3 @@
+useDynLib(foocpp)
+
+export('foo_r_function')

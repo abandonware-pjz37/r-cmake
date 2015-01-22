@@ -1,0 +1,10 @@
+Package: foopack
+Type: Package
+Title: foo package
+Version: 0.0.1
+Date: 2014-01-01
+Author: John Doe
+Maintainer: John Doe <jonhdoe@example.com>
+Description: More about what it does (maybe more than one line)
+License: TBD
+Packaged: 2014-01-01 00:00:00 UTC;
