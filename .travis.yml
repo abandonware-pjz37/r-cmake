@@ -2,6 +2,7 @@ language:
   - cpp
 
 install:
+  - sudo apt-get -y update
   - sudo apt-get -y install cmake
   - sudo apt-get -y install fort77
   - sudo apt-get -y install gfortran
