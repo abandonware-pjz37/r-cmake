@@ -4,6 +4,7 @@ language:
 install:
   - brew tap homebrew/science
   - brew install r
+  - brew install gcc
 
 script:
   - ./run.sh
