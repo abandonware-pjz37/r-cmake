@@ -2,7 +2,21 @@ language:
   - cpp
 
 install:
-  - sudo apt-get -y install r-base
+  - sudo apt-get -y install cmake
+  - sudo apt-get -y install fort77
+  - sudo apt-get -y install gfortran
+  # Install R --
+  - export R_VERSION=R-3.1.2
+  - wget "http://cran.rstudio.com/src/base/R-3/${R_VERSION}.tar.gz"
+  - tar xf "${R_VERSION}.tar.gz"
+  - cd "${R_VERSION}"
+  -   ./configure
+  -   make -j6
+  -   sudo make install
+  -   which R
+  -   R --version
+  - cd ..
+  # -- end
 
 script:
   - ./run.sh
