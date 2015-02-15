@@ -13,4 +13,8 @@ cmake -H. -B_builds \
 
 cmake --build _builds --target install --config Release
 
+# Linux
 cp _install/lib/foocpp.so src/ || echo "Failed: foocpp.so -> src"
+
+# Mac
+cp _install/lib/foocpp.dylib src/foocpp.so || echo "Failed: foocpp.dylib -> src"
