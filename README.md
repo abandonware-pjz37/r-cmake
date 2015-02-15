@@ -23,5 +23,5 @@
  - Call `foo_r_function` (file `mytest.R`)
 
 ### Testing scripts
- - Clean directory (`clean.sh`)
- - Run `R CMD build`, `R CMD check`, `R CMD INSTALL` (to local directory) and test `mytest.R` (`run.sh`)
+ - Clean directory (`clean.py`)
+ - Run `R CMD build`, `R CMD check`, `R CMD INSTALL` (to local directory) and test `mytest.R` (`run.py`)
